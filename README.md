@@ -48,31 +48,6 @@ Pronoun Tags has no servers, no analytics and no ads. To look up pronouns, it se
 
 Pronoun Tags isn't made by or affiliated with Twitch or pr.alejo.io.
 
-## Install from source
-
-### Firefox
-
-1. Go to `about:debugging#/runtime/this-firefox`.
-2. Click **Load Temporary Add-on…** and pick `manifest.json`.
-
-Firefox removes temporary add-ons when it restarts.
-
-### Chrome, Edge and other Chromium browsers
-
-1. Go to `chrome://extensions` (`edge://extensions` in Edge).
-2. Turn on **Developer mode**.
-3. Click **Load unpacked** and pick this folder.
-
-The settings open in a tab once, right after installing.
-
-### Making the zip for the stores
-
-```sh
-./package.sh
-```
-
-This writes `dist/pronoun-tags-<version>.zip` with only the files the extension needs (no `store/` images or Markdown). The same zip goes to all three stores.
-
 ## How it works
 
 | File | Job |
