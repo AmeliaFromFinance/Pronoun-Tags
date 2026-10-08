@@ -2,7 +2,7 @@
 
 Shows each chatter's pronouns from [pr.alejo.io](https://pr.alejo.io) next to their name in Twitch chat, and next to the streamer's name on the channel's About panel, in a style you choose.
 
-![Pronoun Tags' settings beside Twitch chat](store/screenshot-1.png)
+![Pronoun Tags' settings beside Twitch chat](screenshot-1.png)
 
 ## Install
 
