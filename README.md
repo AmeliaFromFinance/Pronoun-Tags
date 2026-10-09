@@ -9,7 +9,7 @@ Shows each chatter's pronouns from [pr.alejo.io](https://pr.alejo.io) next to th
 | Browser | Get it from |
 |---|---|
 | Firefox | [Firefox Add-ons](FIREFOX_ADDONS_LINK) |
-| Chrome, Brave, Opera, Vivaldi, Arc | [Chrome Web Store](CHROME_WEB_STORE_LINK) |
+| Chrome, Brave, Opera, Vivaldi, Arc | [Chrome Web Store](https://chromewebstore.google.com/detail/jmfdbkcneimobndcodfjilfdlnclclag) |
 
 Needs Firefox 140+ or a Chromium browser 121+. Works with Twitch's own chat and with FrankerFaceZ; 7TV's own chat is supported on a best-effort basis. Popout chat, mod view, the creator dashboard and VOD replays get tags too.
 
