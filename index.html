@@ -102,6 +102,11 @@
     .gallery { grid-template-columns: repeat(2, 1fr); }
     nav { display: none; }
   }
+  /* Big screens: scale the whole page up so it keeps the same proportions as on 1080p. */
+  @media (min-width: 1800px) { html { zoom: 1.12; } }
+  @media (min-width: 2200px) { html { zoom: 1.25; } }
+  @media (min-width: 2500px) { html { zoom: 1.35; } }
+  @media (min-width: 3200px) { html { zoom: 1.7; } }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .gallery button { transition: none; } }
 </style>
 <style>
