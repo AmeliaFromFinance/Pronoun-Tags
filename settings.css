@@ -23,6 +23,7 @@
   --font: "Segoe UI Variable Text", "Segoe UI", Inter, system-ui, -apple-system, Roboto, "Noto Sans", sans-serif;
   font-size: 14px;
 }
+/* The popup's size is set from the screen in settings.js. */
 /* The options tab grows with the window: 16px on small screens, about 19px at 1080p and 24px at 1440p. */
 :root.page { font-size: clamp(1rem, .5vw + .5vh + .3rem, 1.5rem); }
 
@@ -49,7 +50,7 @@ a { color: inherit; text-decoration: none; }
 .preview-card { position: relative; }
 .pv {
   padding: .55rem 0 .6rem; border-radius: .9rem;
-  background: #18181b; color: #efeff1; font: 400 13px/20px Inter, Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #18181b; color: #efeff1; font: 400 .93rem/1.55 Inter, Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .06);
 }
 .pv.tw-root--theme-light { background: #ffffff; color: #0e0e10; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1); }
@@ -153,9 +154,8 @@ select:hover { filter: brightness(1.08); }
 .tile[aria-pressed="true"] { box-shadow: inset 0 0 0 2px var(--accent); background: var(--accent-soft); }
 .tile-sample {
   display: grid; place-items: center; height: 2.6rem; border-radius: .6rem;
-  background: #18181b; color: #efeff1; font: 400 13px/1 Inter, Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #18181b; color: #efeff1; font: 400 .93rem/1 Inter, Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.page .tile-sample { font-size: .9rem; }
 .tile-sample.tw-root--theme-light { background: #f7f7f8; color: #0e0e10; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .06); }
 .tile-sample .pn-tag.pn-tag.pn-tag { margin: 0; }
 .tile-name { font-size: .88rem; font-weight: 600; color: var(--muted); }
@@ -183,7 +183,6 @@ select:hover { filter: brightness(1.08); }
 .page #app { max-width: 36rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
 .page .side { margin: 0 -1rem; padding: 0 1rem .8rem; }
 .page .main { padding-inline: 0; }
-.page .pv { font-size: .93rem; line-height: 1.55; }
 @media (min-width: 60rem) {
   .page #app {
     display: grid; grid-template-columns: minmax(18rem, 25rem) minmax(22rem, 34rem); gap: 2.2rem;

@@ -334,6 +334,13 @@
       main);
   }
 
+  // The popup can't follow its window (the browser sizes the window to fit it), so it follows the screen instead:
+  // 14px up to 900px tall, about 15px at 1080p and 17px at 1440p. Browsers cap popups at 800×600.
+  if (!IN_TAB) {
+    const screenHeight = Math.min(screen.height || 900, screen.width || 1600);
+    document.documentElement.style.fontSize = `${Math.min(18, Math.max(14, 14 + (screenHeight - 900) / 180)).toFixed(2)}px`;
+  }
+
   document.documentElement.lang = (ext.i18n && ext.i18n.getUILanguage()) || 'en';
   document.documentElement.dir = t('@@bidi_dir') === 'rtl' ? 'rtl' : 'ltr';
   document.title = t('appTitle');
