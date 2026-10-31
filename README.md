@@ -99,4 +99,4 @@ The website lives on the [`gh-pages`](../../tree/gh-pages) branch.
 - **Cache length:** `MAX_AGE_MS` in `background.js`.
 - **Version:** raise `version` in `manifest.json` for each store upload.
 
-Never change the Firefox add-on ID (`pronoun-tags@ame.owo`). Firefox treats a new ID as a new add-on, so existing installs would stop updating.
+Never change the Firefox add-on ID (`pronoun-tags-for-twitch@ame.owo`). Firefox treats a new ID as a new add-on, so existing installs would stop updating.

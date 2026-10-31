@@ -43,7 +43,7 @@
   "minimum_chrome_version": "121",
   "browser_specific_settings": {
     "gecko": {
-      "id": "pronoun-tags@ame.owo",
+      "id": "pronoun-tags-for-twitch@ame.owo",
       "strict_min_version": "140.0",
       "data_collection_permissions": {
         "required": ["websiteContent", "browsingActivity"]
