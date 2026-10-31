@@ -38,7 +38,7 @@ Twitch's own chat, FrankerFaceZ, popout chat, mod view, the creator dashboard an
 English, Español, Français, Deutsch, Português, Русский and 日本語.
 
 PRIVACY
-No servers, no analytics, no ads. To look up pronouns, chatters' usernames (and the channel you're viewing) are sent to the pronouns API at api.pronouns.alejo.io. Your settings stay in your browser.
+No servers, no analytics, no ads. To look up pronouns, usernames from chat (and the channel you're viewing) are sent to the pronouns API at api.pronouns.alejo.io. Your settings stay in your browser.
 
 If you use FrankerFaceZ's own Pronouns add-on, turn one of them off so you don't see pronouns twice.
 
