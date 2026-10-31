@@ -50,6 +50,9 @@
   "preset_solid": {
     "message": "塗りつぶし"
   },
+  "preset_blush": {
+    "message": "ブラッシュ"
+  },
   "sectionText": {
     "message": "テキスト"
   },
@@ -169,6 +172,12 @@
   },
   "setOwn": {
     "message": "自分の代名詞を設定"
+  },
+  "website": {
+    "message": "ウェブサイト"
+  },
+  "source": {
+    "message": "ソースコード"
   },
   "note": {
     "message": "代名詞は誰かがチャットしたときに取得され、1時間より古い情報は表示されません。設定していない人にはタグが付きません。FrankerFaceZのPronounsアドオンを使っている場合は、どちらか一方をオフにしてください。"

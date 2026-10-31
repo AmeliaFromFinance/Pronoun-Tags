@@ -1,10 +1,11 @@
 # Pronoun Tags for Twitch: store listing
 
-Everything the Chrome Web Store, Firefox Add-ons and Edge Add-ons forms ask for, ready to paste. Replace `YOUR-GITHUB-NAME` with your GitHub name first.
+Everything the Chrome Web Store, Firefox Add-ons and Edge Add-ons forms ask for, ready to paste.
 
 - **Package:** `./package.sh` → `dist/pronoun-tags-<version>.zip` (the same zip for all three stores)
-- **Privacy policy URL:** `https://github.com/YOUR-GITHUB-NAME/pronoun-tags/blob/main/PRIVACY.md`
-- **Website / support:** `https://github.com/YOUR-GITHUB-NAME/pronoun-tags` and `…/pronoun-tags/issues`
+- **Privacy policy URL:** `https://github.com/AmeliaFromFinance/Pronoun-Tags/blob/main/PRIVACY.md`
+- **Website:** `https://pronouns.sinist3r.lol`
+- **Support:** `https://github.com/AmeliaFromFinance/Pronoun-Tags/issues`
 - **Images:** this folder (see the table at the end)
 
 ## Listing text
@@ -24,7 +25,7 @@ Pronouns come from pr.alejo.io, where anyone can set their own for free. People 
 
 MAKE IT YOURS
 Click the toolbar button for a live preview and:
-- Five ready-made styles: Classic, Name color, Outline, Subtle and Solid.
+- Six ready-made styles: Classic, Name color, Outline, Subtle, Solid and Blush.
 - Capitals: She/Her, she/her, SHE/HER or She/her.
 - Brackets, what goes between the words, or just the first word.
 - Text in Twitch purple, the person's own name color, gray or any color. A soft tint, no background, or any color behind it.

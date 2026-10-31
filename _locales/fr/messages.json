@@ -50,6 +50,9 @@
   "preset_solid": {
     "message": "Plein"
   },
+  "preset_blush": {
+    "message": "Rose poudré"
+  },
   "sectionText": {
     "message": "Texte"
   },
@@ -169,6 +172,12 @@
   },
   "setOwn": {
     "message": "Indiquer tes pronoms"
+  },
+  "website": {
+    "message": "Site web"
+  },
+  "source": {
+    "message": "Code source"
   },
   "note": {
     "message": "Les pronoms sont récupérés quand quelqu’un écrit dans le chat et ne datent jamais de plus d’une heure. Les personnes qui n’en ont pas indiqué n’ont pas d’étiquette. Si tu utilises le module Pronouns de FrankerFaceZ, désactive l’un des deux."

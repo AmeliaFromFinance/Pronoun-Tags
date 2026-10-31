@@ -1,115 +1,102 @@
 # Pronoun Tags for Twitch
 
-Shows each chatter's pronouns from [pr.alejo.io](https://pr.alejo.io) next to their name in Twitch chat, and next to the streamer's name on the channel's About panel, in a style you choose.
+Shows people's pronouns from [pr.alejo.io](https://pr.alejo.io) next to their names in Twitch chat, in a style you choose.
 
-![Pronoun Tags' settings beside Twitch chat](store/screenshot-1.png)
+![Pronoun Tags settings](screenshots/options.jpg)
+
+**Website:** [pronouns.sinist3r.lol](https://pronouns.sinist3r.lol)
 
 ## Install
 
 | Browser | Get it from |
 |---|---|
-| Firefox | [Firefox Add-ons](FIREFOX_ADDONS_LINK) |
-| Chrome, Brave, Opera, Vivaldi, Arc | [Chrome Web Store](CHROME_WEB_STORE_LINK) |
-| Microsoft Edge | [Edge Add-ons](EDGE_ADDONS_LINK) |
+| Firefox | [Firefox Add-ons](https://addons.mozilla.org/en-GB/firefox/addon/pronoun-tags-for-twitch/) |
+| Chrome, Edge, Brave, Opera, Vivaldi, Arc | [Chrome Web Store](https://chromewebstore.google.com/detail/jmfdbkcneimobndcodfjilfdlnclclag) |
 
-Needs Firefox 140+ or a Chromium browser 121+. Works with Twitch's own chat and with FrankerFaceZ; 7TV's own chat is supported on a best-effort basis. Popout chat, mod view, the creator dashboard and VOD replays get tags too.
+Needs Firefox 140+ or a Chromium browser 121+.
 
-People who haven't set any pronouns get no tag. Clicking a tag opens pr.alejo.io, where anyone can set or change their own.
+## Gallery
 
-## Making it look your way
+| | | |
+|:-:|:-:|:-:|
+| ![Classic tags in chat](screenshots/chat-classic.png) | ![Name color tags](screenshots/chat-name.png) | ![Blush tags](screenshots/chat-blush.png) |
+| Classic | Name color | Blush |
+| ![Style settings](screenshots/popup-style.png) | ![Text settings](screenshots/popup-text.png) | ![Where settings](screenshots/popup-where.png) |
+| Style | Text | Where |
 
-Click the Pronoun Tags button in the browser's toolbar. Every change shows up in open Twitch tabs straight away, and a preview at the top shows sample chat in Twitch's dark or light theme. **Open in a tab** gives the same settings in a full page.
+## Features
 
-- **Styles:** five ready-made looks to start from: Classic, Name color, Outline, Subtle and Solid.
-- **Text:** capitals (She/Her, she/her, SHE/HER, She/her), brackets (none, round, square or curly), what goes between the words (/, ` / `, ·, a comma), and both words or only the first (She/Her or She).
-- **Colors:** text in Twitch purple, the person's own name color, gray or any color you pick. A soft tint behind it, no background, or any color you pick. Outline on or off.
-- **Shape and size:** round, slightly rounded or square corners. Size from 60% to 130% of the chat text, bold and italic.
-- **Where:** in chat, on the About panel, and on your own messages, each on or off. Tags can go before or after the name. Clicking a tag can open pr.alejo.io, or do nothing.
-- **Show pronouns** at the top turns every tag off and on.
+- **Works everywhere on Twitch:** chat, popout chat, mod view, the creator dashboard, VOD replays and a channel's About panel.
+- **Works with FrankerFaceZ.** 7TV chat is best effort.
+- **Six styles to start from:** Classic, Name color, Outline, Subtle, Solid and Blush.
+- **Text:** capitals, brackets, separator, and both words or just the first (She/Her or She).
+- **Colors:** Twitch purple, the person's name color, gray or any color. Tint, no background or any color behind it.
+- **Shape and size:** round, slightly rounded or square, 60% to 130% of chat text, bold and italic.
+- **Where:** chat, About panel and your own messages, each on or off. Before or after the name.
+- **Live preview** in Twitch's dark or light theme. Changes apply to open tabs straight away.
+- **Languages:** English, Español, Français, Deutsch, Português, Русский and 日本語, following your browser.
 
-Color settings have a picker and a box for a hex code. Some browsers close the toolbar popup when the color picker opens, so if that happens, type the code instead or use **Open in a tab**.
+People with no pronouns set get no tag. Clicking a tag opens pr.alejo.io so anyone can set their own.
 
-Settings are kept in the browser's extension storage on this computer.
+## Settings
 
-The settings and tag tooltips are in English, Español, Français, Deutsch, Português, Русский and 日本語, following the browser's language.
+Click the Pronoun Tags button in the browser toolbar. **Open in a tab** shows the same settings full size.
 
-## Good to know
+Some browsers close the toolbar popup when the color picker opens. If that happens, type the hex code instead or use **Open in a tab**.
 
-### If you use FrankerFaceZ
+### Good to know
 
-FFZ has its own **Pronouns** add-on that shows pronouns as a badge. Turn it off (FFZ settings → Add-Ons → Pronouns), or you'll see pronouns twice.
-
-### If you also use Rainbark
-
-Rainbark has pronoun tags of its own. While this extension's tags are on the page, Rainbark leaves pronouns to it.
+- **FrankerFaceZ:** turn off its own Pronouns add-on (FFZ settings → Add-Ons → Pronouns), or you'll see pronouns twice.
+- **Rainbark:** has pronoun tags too. While this extension is on, Rainbark leaves pronouns to it.
 
 ## Privacy
 
-Pronoun Tags has no servers, no analytics and no ads. To look up pronouns, it sends the usernames of people in chat (and the channel you're viewing, for its About panel) to the pronouns API at `api.pronouns.alejo.io`. Settings stay in your browser. The details are in [PRIVACY.md](PRIVACY.md).
+No servers, no analytics, no ads. To look up pronouns, usernames from chat (and the channel you're viewing) are sent to `api.pronouns.alejo.io`. Settings stay in your browser. Full details in [PRIVACY.md](PRIVACY.md).
 
 Pronoun Tags isn't made by or affiliated with Twitch or pr.alejo.io.
 
-## Install from source
+## Development
 
-### Firefox
+### Load from source
 
-1. Go to `about:debugging#/runtime/this-firefox`.
-2. Click **Load Temporary Add-on…** and pick `manifest.json`.
+**Firefox:** go to `about:debugging#/runtime/this-firefox` → **Load Temporary Add-on** → pick `manifest.json`. It's removed when Firefox restarts.
 
-Firefox removes temporary add-ons when it restarts.
+**Chromium:** go to `chrome://extensions` → turn on **Developer mode** → **Load unpacked** → pick this folder.
 
-### Chrome, Edge and other Chromium browsers
-
-1. Go to `chrome://extensions` (`edge://extensions` in Edge).
-2. Turn on **Developer mode**.
-3. Click **Load unpacked** and pick this folder.
-
-The settings open in a tab once, right after installing.
-
-### Making the zip for the stores
+### Build the store zip
 
 ```sh
 ./package.sh
 ```
 
-This writes `dist/pronoun-tags-<version>.zip` with only the files the extension needs (no `store/` images or Markdown). The same zip goes to all three stores.
+Writes `dist/pronoun-tags-<version>.zip` with only the files the extension needs. The same zip works for every store.
 
-## How it works
+### Files
 
-| File | Job |
+| File | What it does |
 |---|---|
-| `manifest.json` | Declares the extension for both browsers. It asks for the `storage` permission and access to `api.pronouns.alejo.io`, and runs on `www.twitch.tv` and `dashboard.twitch.tv`. |
-| `background.js` | Makes every request to the pronouns API, keeps the shared cache and limits a busy chat to 6 requests at a time. Opens the settings once after installing. Runs as a service worker in Chromium and as an event page in Firefox. |
-| `look.js` | The settings: their defaults, the choices, the five styles, and how a tag's text is written. Shared by the tags on Twitch and the settings page, so the preview always matches. |
-| `content.js` | Watches Twitch for chat names and the About heading, asks the background for each person's pronouns and puts the tags in. Follows setting changes as they're made. |
-| `content.css` | How tags look. The settings arrive as `data-pn-*` attributes and a few `--pn-*` variables on the page's `<html>` element, so one stylesheet covers every combination. Sizes are in `em`, so tags follow your chat font size. |
+| `manifest.json` | Extension manifest for both browsers. |
+| `background.js` | All requests to the pronouns API. Shared cache, at most 6 requests at once. |
+| `look.js` | Defaults, choices, styles and tag text. Shared by the tags and the settings preview. |
+| `content.js` | Finds names on Twitch and adds the tags. Follows setting changes live. |
+| `content.css` | Tag styles. Settings arrive as `data-pn-*` attributes and `--pn-*` variables on `<html>`. |
 | `popup.html`, `options.html`, `settings.js`, `settings.css` | The settings, in the toolbar popup and in a tab. |
-| `_locales/` | The text of the settings and the tag tooltips in each language. |
+| `_locales/` | All text, per language. |
 
-**Finding usernames.** The script reads the login from Twitch's `data-a-user` attribute, FFZ's `data-user`, the "(login)" part of a localized name, or the display name itself, in that order.
+The website lives on the [`gh-pages`](../../tree/gh-pages) branch.
 
-**Your own messages.** To leave your own messages untagged, the script reads your login from Twitch's `login` cookie (or, if that's missing, the login inside Twitch's `twilight-user` cookie). It takes nothing else from your cookies, and doesn't store or send what it reads.
+### How lookups work
 
-**Pronoun words.** The background sends each person's pronouns as words, and the tab writes them out with your settings:
+- **Usernames** come from Twitch's `data-a-user`, FFZ's `data-user`, the "(login)" in a localized name, or the display name, in that order.
+- **Your own messages** are found using the login in Twitch's `login` or `twilight-user` cookie. Nothing else is read, stored or sent.
+- **Pronoun text:** main + alternate gives She/They. Sets marked `singular` give one word, like Any. Everything else gives She/Her.
+- **Cache:** each person is looked up once, for at most an hour. Changing settings never looks anyone up again. "Not found" is cached too. Failures retry after a minute, and a 429 pauses all requests for as long as the API asks.
 
-- Main and alternate pronouns give both subjects, for example She/They.
-- Sets marked `singular` give just the subject, for example Any.
-- Everything else gives subject and object, for example She/Her.
+### Making changes
 
-**Caching.** Results are never older than one hour:
-
-- Each person is looked up once, then cached in the background and in each tab. Changing settings never looks anyone up again.
-- The cache ends an hour after the API produced the data. If the CDN says its copy is already 20 minutes old, it's kept for 40 more.
-- Requests skip the browser's own HTTP cache, which would otherwise add up to another hour.
-- When a cached entry expires and that person chats again, they're looked up again and every tag of theirs on the page updates.
-- "Not found" results are cached the same way. Failed requests are retried after a minute, and a 429 response pauses all requests for as long as the API asks.
-
-## Changing things
-
-- **Defaults, choices and styles:** `DEFAULTS`, `CHOICES` and `PRESETS` in `look.js`. A new choice or style also needs its name in each `_locales/<language>/messages.json`.
+- **Defaults, choices and styles:** `DEFAULTS`, `CHOICES` and `PRESETS` in `look.js`. New ones also need a name in each `_locales/<language>/messages.json`.
 - **How a choice looks:** the matching `[data-pn-…]` rule in `content.css`.
-- **Text and languages:** `_locales/<language>/messages.json`.
-- **Where tags link:** `SETTINGS_URL` in `content.js` and `settings.js`.
 - **Cache length:** `MAX_AGE_MS` in `background.js`.
+- **Version:** raise `version` in `manifest.json` for each store upload.
 
-Keep the Firefox add-on ID (`pronoun-tags@ame.owo` in `manifest.json`) the same forever: Firefox treats a new ID as a different add-on, so existing installs wouldn't update. Raise `version` in `manifest.json` for every store upload.
+Never change the Firefox add-on ID (`pronoun-tags@ame.owo`). Firefox treats a new ID as a new add-on, so existing installs would stop updating.

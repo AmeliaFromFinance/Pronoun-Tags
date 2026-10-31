@@ -56,6 +56,7 @@ var PronounLook = globalThis.PronounLook || (() => {
     subtle:  { ...base, textCase: 'lower', brackets: 'round', color: 'gray', background: 'none', border: false, bold: false },
     solid:   { ...base, textCase: 'upper', color: 'custom', customColor: '#FFFFFF', background: 'custom', customBackground: '#9147FF',
                border: false, shape: 'rounded', size: 75 },
+    blush:   { ...base, color: 'custom', customColor: '#FFB3D1' },
   };
 
   function clean(raw) {

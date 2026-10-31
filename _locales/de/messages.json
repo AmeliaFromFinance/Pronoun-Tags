@@ -50,6 +50,9 @@
   "preset_solid": {
     "message": "Gefüllt"
   },
+  "preset_blush": {
+    "message": "Rosé"
+  },
   "sectionText": {
     "message": "Text"
   },
@@ -169,6 +172,12 @@
   },
   "setOwn": {
     "message": "Eigene Pronomen festlegen"
+  },
+  "website": {
+    "message": "Website"
+  },
+  "source": {
+    "message": "Quellcode"
   },
   "note": {
     "message": "Pronomen werden abgerufen, wenn jemand chattet, und sind nie älter als eine Stunde. Wer keine eingetragen hat, bekommt keine Anzeige. Wenn du das FrankerFaceZ-Add-on „Pronouns“ nutzt, schalte eins von beiden aus."

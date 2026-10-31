@@ -50,6 +50,9 @@
   "preset_solid": {
     "message": "Solid"
   },
+  "preset_blush": {
+    "message": "Blush"
+  },
   "sectionText": {
     "message": "Text"
   },
@@ -169,6 +172,12 @@
   },
   "setOwn": {
     "message": "Set your pronouns"
+  },
+  "website": {
+    "message": "Website"
+  },
+  "source": {
+    "message": "Source code"
   },
   "note": {
     "message": "Pronouns are looked up when someone chats and are never more than an hour old. People who haven't set any get no tag. If you use FrankerFaceZ's own Pronouns add-on, turn one of them off."

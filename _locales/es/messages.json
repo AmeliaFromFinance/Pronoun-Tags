@@ -50,6 +50,9 @@
   "preset_solid": {
     "message": "Sólido"
   },
+  "preset_blush": {
+    "message": "Rubor"
+  },
   "sectionText": {
     "message": "Texto"
   },
@@ -169,6 +172,12 @@
   },
   "setOwn": {
     "message": "Poner tus pronombres"
+  },
+  "website": {
+    "message": "Sitio web"
+  },
+  "source": {
+    "message": "Código fuente"
   },
   "note": {
     "message": "Los pronombres se consultan cuando alguien escribe en el chat y nunca tienen más de una hora de antigüedad. Quien no haya puesto ninguno no lleva etiqueta. Si usas el complemento Pronouns del propio FrankerFaceZ, desactiva uno de los dos."

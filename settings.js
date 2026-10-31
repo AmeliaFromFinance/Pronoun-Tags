@@ -10,6 +10,8 @@
   const LOOK = PronounLook;
   const IN_TAB = document.documentElement.classList.contains('page');
   const SETTINGS_URL = 'https://pr.alejo.io';
+  const WEBSITE_URL = 'https://pronouns.sinist3r.lol';
+  const SOURCE_URL = 'https://github.com/AmeliaFromFinance/Pronoun-Tags';
 
   function t(key, vars) {
     let text = '';
@@ -36,7 +38,7 @@
   /* ---- State and saving ---- */
 
   let look = LOOK.clean(null);
-  let theme = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';   // the preview's Twitch theme
+  let theme = 'dark';   // the preview's Twitch theme
   const syncers = [];                       // each brings one part of the page up to date with `look`
   const sync = () => syncers.forEach(update => update());
 
@@ -245,7 +247,11 @@
       icon('tab'), h('span', { class: 'row-text', text: t('openTab') }));
     const own = h('a', { class: 'row action', href: SETTINGS_URL, target: '_blank', rel: 'noopener noreferrer', 'data-key': 'set-own' },
       icon('out'), h('span', { class: 'row-text', text: t('setOwn') }));
-    return [h('div', { class: 'group actions' }, own, openTab, reset), h('p', { class: 'note', text: t('note') })];
+    const link = (href, key) => h('a', { href, target: '_blank', rel: 'noopener noreferrer', text: t(key) });
+    const version = (ext.runtime && ext.runtime.getManifest && ext.runtime.getManifest().version) || '';
+    return [h('div', { class: 'group actions' }, own, openTab, reset), h('p', { class: 'note', text: t('note') }),
+      h('p', { class: 'foot' }, version ? h('span', { text: `v${version}` }) : null,
+        link(WEBSITE_URL, 'website'), link(SOURCE_URL, 'source'))];
   }
 
   /* ---- The page ---- */

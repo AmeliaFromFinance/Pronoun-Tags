@@ -50,6 +50,9 @@
   "preset_solid": {
     "message": "Sólido"
   },
+  "preset_blush": {
+    "message": "Rosado"
+  },
   "sectionText": {
     "message": "Texto"
   },
@@ -169,6 +172,12 @@
   },
   "setOwn": {
     "message": "Definir seus pronomes"
+  },
+  "website": {
+    "message": "Site"
+  },
+  "source": {
+    "message": "Código-fonte"
   },
   "note": {
     "message": "Os pronomes são buscados quando alguém fala no chat e nunca ficam mais de uma hora desatualizados. Quem não definiu nenhum fica sem tag. Se você usa o add-on Pronouns do próprio FrankerFaceZ, desative um dos dois."
