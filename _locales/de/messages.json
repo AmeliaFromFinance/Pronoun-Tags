@@ -1,0 +1,188 @@
+{
+  "extDescription": {
+    "message": "Zeigt im Twitch-Chat die Pronomen von pr.alejo.io neben den Namen an – in einem Stil deiner Wahl."
+  },
+  "actionTitle": {
+    "message": "Pronoun Tags – Einstellungen"
+  },
+  "appTitle": {
+    "message": "Pronoun Tags"
+  },
+  "show": {
+    "message": "Pronomen anzeigen"
+  },
+  "showSub": {
+    "message": "Von pr.alejo.io, neben Namen auf Twitch"
+  },
+  "installed": {
+    "message": "Pronoun Tags ist installiert. Öffne einen beliebigen Twitch-Chat, um die Pronomen der Leute zu sehen. Um ihr Aussehen zu ändern, klick in der Symbolleiste deines Browsers auf die Schaltfläche von Pronoun Tags."
+  },
+  "preview": {
+    "message": "Vorschau"
+  },
+  "previewLightTheme": {
+    "message": "Helles Design"
+  },
+  "previewYou": {
+    "message": "Du"
+  },
+  "previewAbout": {
+    "message": "Über {channel}"
+  },
+  "tabStyle": {
+    "message": "Stil"
+  },
+  "styles": {
+    "message": "Mit einem Stil anfangen"
+  },
+  "preset_classic": {
+    "message": "Klassisch"
+  },
+  "preset_name": {
+    "message": "Namensfarbe"
+  },
+  "preset_outline": {
+    "message": "Umriss"
+  },
+  "preset_subtle": {
+    "message": "Dezent"
+  },
+  "preset_solid": {
+    "message": "Gefüllt"
+  },
+  "sectionText": {
+    "message": "Text"
+  },
+  "case": {
+    "message": "Großschreibung"
+  },
+  "brackets": {
+    "message": "Klammern"
+  },
+  "separator": {
+    "message": "Trennzeichen"
+  },
+  "words": {
+    "message": "Wörter"
+  },
+  "sectionColors": {
+    "message": "Farben"
+  },
+  "color": {
+    "message": "Textfarbe"
+  },
+  "color_purple": {
+    "message": "Twitch-Lila"
+  },
+  "color_name": {
+    "message": "Namensfarbe"
+  },
+  "color_gray": {
+    "message": "Grau"
+  },
+  "color_custom": {
+    "message": "Eigene Farbe"
+  },
+  "background": {
+    "message": "Hintergrund"
+  },
+  "bg_tint": {
+    "message": "Leicht getönt"
+  },
+  "bg_none": {
+    "message": "Ohne"
+  },
+  "bg_custom": {
+    "message": "Eigene Farbe"
+  },
+  "outline": {
+    "message": "Rahmen"
+  },
+  "pickColor": {
+    "message": "Farbe wählen: {setting}"
+  },
+  "hexLabel": {
+    "message": "Hex-Code: {setting}"
+  },
+  "sectionShape": {
+    "message": "Form und Größe"
+  },
+  "corners": {
+    "message": "Ecken"
+  },
+  "shape_pill": {
+    "message": "Rund"
+  },
+  "shape_rounded": {
+    "message": "Leicht abgerundet"
+  },
+  "shape_square": {
+    "message": "Eckig"
+  },
+  "size": {
+    "message": "Größe"
+  },
+  "sizeSub": {
+    "message": "Im Verhältnis zum Chattext"
+  },
+  "bold": {
+    "message": "Fett"
+  },
+  "italic": {
+    "message": "Kursiv"
+  },
+  "sectionWhere": {
+    "message": "Wo"
+  },
+  "chat": {
+    "message": "Im Chat"
+  },
+  "about": {
+    "message": "Im „Über“-Bereich eines Kanals"
+  },
+  "own": {
+    "message": "Bei deinen eigenen Nachrichten"
+  },
+  "place": {
+    "message": "Position im Chat"
+  },
+  "place_after": {
+    "message": "Nach dem Namen"
+  },
+  "place_before": {
+    "message": "Vor dem Namen"
+  },
+  "link": {
+    "message": "Ein Klick auf die Pronomen öffnet pr.alejo.io"
+  },
+  "linkSub": {
+    "message": "Dort können alle ihre eigenen Pronomen eintragen"
+  },
+  "reset": {
+    "message": "Zurücksetzen"
+  },
+  "resetConfirm": {
+    "message": "Zum Zurücksetzen noch mal klicken"
+  },
+  "openTab": {
+    "message": "In einem Tab öffnen"
+  },
+  "setOwn": {
+    "message": "Eigene Pronomen festlegen"
+  },
+  "note": {
+    "message": "Pronomen werden abgerufen, wenn jemand chattet, und sind nie älter als eine Stunde. Wer keine eingetragen hat, bekommt keine Anzeige. Wenn du das FrankerFaceZ-Add-on „Pronouns“ nutzt, schalte eins von beiden aus."
+  },
+  "tagTitle": {
+    "message": "Pronomen von pr.alejo.io. Klick, um deine eigenen festzulegen."
+  },
+  "tagTitlePlain": {
+    "message": "Pronomen von pr.alejo.io"
+  },
+  "tagLabel": {
+    "message": "Pronomen: {pronouns}. Öffnet pr.alejo.io, um deine eigenen festzulegen."
+  },
+  "tagLabelPlain": {
+    "message": "Pronomen: {pronouns}"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "extDescription": {
+    "message": "Affiche les pronoms de pr.alejo.io à côté des pseudos dans le chat Twitch, dans le style de ton choix."
+  },
+  "actionTitle": {
+    "message": "Réglages de Pronoun Tags"
+  },
+  "appTitle": {
+    "message": "Pronoun Tags"
+  },
+  "show": {
+    "message": "Afficher les pronoms"
+  },
+  "showSub": {
+    "message": "Via pr.alejo.io, à côté des pseudos sur Twitch"
+  },
+  "installed": {
+    "message": "Pronoun Tags est installé. Ouvre n’importe quel chat Twitch pour voir les pronoms des gens. Pour changer leur apparence, clique sur le bouton Pronoun Tags dans la barre d’outils de ton navigateur."
+  },
+  "preview": {
+    "message": "Aperçu"
+  },
+  "previewLightTheme": {
+    "message": "Thème clair"
+  },
+  "previewYou": {
+    "message": "Toi"
+  },
+  "previewAbout": {
+    "message": "À propos de {channel}"
+  },
+  "tabStyle": {
+    "message": "Style"
+  },
+  "styles": {
+    "message": "Partir d’un style"
+  },
+  "preset_classic": {
+    "message": "Classique"
+  },
+  "preset_name": {
+    "message": "Couleur du pseudo"
+  },
+  "preset_outline": {
+    "message": "Contour"
+  },
+  "preset_subtle": {
+    "message": "Discret"
+  },
+  "preset_solid": {
+    "message": "Plein"
+  },
+  "sectionText": {
+    "message": "Texte"
+  },
+  "case": {
+    "message": "Majuscules"
+  },
+  "brackets": {
+    "message": "Parenthèses"
+  },
+  "separator": {
+    "message": "Entre les mots"
+  },
+  "words": {
+    "message": "Mots"
+  },
+  "sectionColors": {
+    "message": "Couleurs"
+  },
+  "color": {
+    "message": "Couleur du texte"
+  },
+  "color_purple": {
+    "message": "Violet Twitch"
+  },
+  "color_name": {
+    "message": "Couleur du pseudo"
+  },
+  "color_gray": {
+    "message": "Gris"
+  },
+  "color_custom": {
+    "message": "Ta couleur"
+  },
+  "background": {
+    "message": "Fond"
+  },
+  "bg_tint": {
+    "message": "Teinte légère"
+  },
+  "bg_none": {
+    "message": "Aucun"
+  },
+  "bg_custom": {
+    "message": "Ta couleur"
+  },
+  "outline": {
+    "message": "Contour"
+  },
+  "pickColor": {
+    "message": "{setting} : choisir une couleur"
+  },
+  "hexLabel": {
+    "message": "{setting} : code hexadécimal"
+  },
+  "sectionShape": {
+    "message": "Forme et taille"
+  },
+  "corners": {
+    "message": "Coins"
+  },
+  "shape_pill": {
+    "message": "Ronds"
+  },
+  "shape_rounded": {
+    "message": "Peu arrondis"
+  },
+  "shape_square": {
+    "message": "Carrés"
+  },
+  "size": {
+    "message": "Taille"
+  },
+  "sizeSub": {
+    "message": "Par rapport au texte du chat"
+  },
+  "bold": {
+    "message": "Gras"
+  },
+  "italic": {
+    "message": "Italique"
+  },
+  "sectionWhere": {
+    "message": "Où"
+  },
+  "chat": {
+    "message": "Dans le chat"
+  },
+  "about": {
+    "message": "Dans la section « À propos » d’une chaîne"
+  },
+  "own": {
+    "message": "Sur tes propres messages"
+  },
+  "place": {
+    "message": "Position dans le chat"
+  },
+  "place_after": {
+    "message": "Après le pseudo"
+  },
+  "place_before": {
+    "message": "Avant le pseudo"
+  },
+  "link": {
+    "message": "Cliquer sur une étiquette ouvre pr.alejo.io"
+  },
+  "linkSub": {
+    "message": "Où chacun peut indiquer ses pronoms"
+  },
+  "reset": {
+    "message": "Réinitialiser"
+  },
+  "resetConfirm": {
+    "message": "Clique encore pour réinitialiser"
+  },
+  "openTab": {
+    "message": "Ouvrir dans un onglet"
+  },
+  "setOwn": {
+    "message": "Indiquer tes pronoms"
+  },
+  "note": {
+    "message": "Les pronoms sont récupérés quand quelqu’un écrit dans le chat et ne datent jamais de plus d’une heure. Les personnes qui n’en ont pas indiqué n’ont pas d’étiquette. Si tu utilises le module Pronouns de FrankerFaceZ, désactive l’un des deux."
+  },
+  "tagTitle": {
+    "message": "Pronoms via pr.alejo.io. Clique pour indiquer les tiens."
+  },
+  "tagTitlePlain": {
+    "message": "Pronoms via pr.alejo.io"
+  },
+  "tagLabel": {
+    "message": "Pronoms : {pronouns}. Ouvre pr.alejo.io pour indiquer les tiens."
+  },
+  "tagLabelPlain": {
+    "message": "Pronoms : {pronouns}"
+  }
+}

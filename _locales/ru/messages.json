@@ -1,0 +1,188 @@
+{
+  "extDescription": {
+    "message": "Показывает местоимения с pr.alejo.io рядом с именами в чате Twitch — в том стиле, который ты выберешь."
+  },
+  "actionTitle": {
+    "message": "Настройки Pronoun Tags"
+  },
+  "appTitle": {
+    "message": "Pronoun Tags"
+  },
+  "show": {
+    "message": "Показывать местоимения"
+  },
+  "showSub": {
+    "message": "С сайта pr.alejo.io, рядом с именами на Twitch"
+  },
+  "installed": {
+    "message": "Pronoun Tags установлен. Открой любой чат на Twitch, чтобы видеть местоимения людей. Чтобы изменить их вид, нажми кнопку Pronoun Tags на панели инструментов браузера."
+  },
+  "preview": {
+    "message": "Предпросмотр"
+  },
+  "previewLightTheme": {
+    "message": "Светлая тема"
+  },
+  "previewYou": {
+    "message": "Ты"
+  },
+  "previewAbout": {
+    "message": "О канале {channel}"
+  },
+  "tabStyle": {
+    "message": "Стиль"
+  },
+  "styles": {
+    "message": "Начать с готового стиля"
+  },
+  "preset_classic": {
+    "message": "Классика"
+  },
+  "preset_name": {
+    "message": "Цвет имени"
+  },
+  "preset_outline": {
+    "message": "Контур"
+  },
+  "preset_subtle": {
+    "message": "Неброский"
+  },
+  "preset_solid": {
+    "message": "Заливка"
+  },
+  "sectionText": {
+    "message": "Текст"
+  },
+  "case": {
+    "message": "Регистр"
+  },
+  "brackets": {
+    "message": "Скобки"
+  },
+  "separator": {
+    "message": "Между словами"
+  },
+  "words": {
+    "message": "Слова"
+  },
+  "sectionColors": {
+    "message": "Цвета"
+  },
+  "color": {
+    "message": "Цвет текста"
+  },
+  "color_purple": {
+    "message": "Фиолетовый Twitch"
+  },
+  "color_name": {
+    "message": "Как цвет имени"
+  },
+  "color_gray": {
+    "message": "Серый"
+  },
+  "color_custom": {
+    "message": "Свой цвет"
+  },
+  "background": {
+    "message": "Фон"
+  },
+  "bg_tint": {
+    "message": "Лёгкий оттенок"
+  },
+  "bg_none": {
+    "message": "Нет"
+  },
+  "bg_custom": {
+    "message": "Свой цвет"
+  },
+  "outline": {
+    "message": "Обводка"
+  },
+  "pickColor": {
+    "message": "Выбор цвета: {setting}"
+  },
+  "hexLabel": {
+    "message": "HEX-код: {setting}"
+  },
+  "sectionShape": {
+    "message": "Форма и размер"
+  },
+  "corners": {
+    "message": "Углы"
+  },
+  "shape_pill": {
+    "message": "Круглые"
+  },
+  "shape_rounded": {
+    "message": "Скруглённые"
+  },
+  "shape_square": {
+    "message": "Прямые"
+  },
+  "size": {
+    "message": "Размер"
+  },
+  "sizeSub": {
+    "message": "Относительно текста чата"
+  },
+  "bold": {
+    "message": "Жирный шрифт"
+  },
+  "italic": {
+    "message": "Курсив"
+  },
+  "sectionWhere": {
+    "message": "Где показывать"
+  },
+  "chat": {
+    "message": "В чате"
+  },
+  "about": {
+    "message": "В описании канала"
+  },
+  "own": {
+    "message": "В твоих сообщениях"
+  },
+  "place": {
+    "message": "Положение в чате"
+  },
+  "place_after": {
+    "message": "После имени"
+  },
+  "place_before": {
+    "message": "Перед именем"
+  },
+  "link": {
+    "message": "Клик по метке открывает pr.alejo.io"
+  },
+  "linkSub": {
+    "message": "Там любой может указать свои местоимения"
+  },
+  "reset": {
+    "message": "Сбросить"
+  },
+  "resetConfirm": {
+    "message": "Нажми ещё раз, чтобы сбросить"
+  },
+  "openTab": {
+    "message": "Открыть во вкладке"
+  },
+  "setOwn": {
+    "message": "Указать свои местоимения"
+  },
+  "note": {
+    "message": "Местоимения загружаются, когда человек пишет в чат, и хранятся не дольше часа. У тех, кто их не указал, метки нет. Если пользуешься дополнением Pronouns в FrankerFaceZ, отключи что-то одно."
+  },
+  "tagTitle": {
+    "message": "Местоимения с pr.alejo.io. Нажми, чтобы указать свои."
+  },
+  "tagTitlePlain": {
+    "message": "Местоимения с pr.alejo.io"
+  },
+  "tagLabel": {
+    "message": "Местоимения: {pronouns}. Открывает pr.alejo.io, чтобы указать свои."
+  },
+  "tagLabelPlain": {
+    "message": "Местоимения: {pronouns}"
+  }
+}

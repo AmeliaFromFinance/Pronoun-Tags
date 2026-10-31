@@ -1,0 +1,188 @@
+{
+  "extDescription": {
+    "message": "Muestra los pronombres de pr.alejo.io junto a los nombres en el chat de Twitch, con el estilo que elijas."
+  },
+  "actionTitle": {
+    "message": "Ajustes de Pronoun Tags"
+  },
+  "appTitle": {
+    "message": "Pronoun Tags"
+  },
+  "show": {
+    "message": "Mostrar pronombres"
+  },
+  "showSub": {
+    "message": "De pr.alejo.io, junto a los nombres en Twitch"
+  },
+  "installed": {
+    "message": "Pronoun Tags ya está instalado. Abre cualquier chat de Twitch para ver los pronombres de la gente. Para cambiar su aspecto, haz clic en el botón de Pronoun Tags en la barra de herramientas del navegador."
+  },
+  "preview": {
+    "message": "Vista previa"
+  },
+  "previewLightTheme": {
+    "message": "Tema claro"
+  },
+  "previewYou": {
+    "message": "Tú"
+  },
+  "previewAbout": {
+    "message": "Acerca de {channel}"
+  },
+  "tabStyle": {
+    "message": "Estilo"
+  },
+  "styles": {
+    "message": "Empieza con un estilo"
+  },
+  "preset_classic": {
+    "message": "Clásico"
+  },
+  "preset_name": {
+    "message": "Color del nombre"
+  },
+  "preset_outline": {
+    "message": "Contorno"
+  },
+  "preset_subtle": {
+    "message": "Discreto"
+  },
+  "preset_solid": {
+    "message": "Sólido"
+  },
+  "sectionText": {
+    "message": "Texto"
+  },
+  "case": {
+    "message": "Mayúsculas"
+  },
+  "brackets": {
+    "message": "Paréntesis"
+  },
+  "separator": {
+    "message": "Entre palabras"
+  },
+  "words": {
+    "message": "Palabras"
+  },
+  "sectionColors": {
+    "message": "Colores"
+  },
+  "color": {
+    "message": "Color del texto"
+  },
+  "color_purple": {
+    "message": "Morado de Twitch"
+  },
+  "color_name": {
+    "message": "Color de su nombre"
+  },
+  "color_gray": {
+    "message": "Gris"
+  },
+  "color_custom": {
+    "message": "Color propio"
+  },
+  "background": {
+    "message": "Fondo"
+  },
+  "bg_tint": {
+    "message": "Tono suave"
+  },
+  "bg_none": {
+    "message": "Ninguno"
+  },
+  "bg_custom": {
+    "message": "Color propio"
+  },
+  "outline": {
+    "message": "Borde"
+  },
+  "pickColor": {
+    "message": "Elegir un color: {setting}"
+  },
+  "hexLabel": {
+    "message": "Código hexadecimal: {setting}"
+  },
+  "sectionShape": {
+    "message": "Forma y tamaño"
+  },
+  "corners": {
+    "message": "Esquinas"
+  },
+  "shape_pill": {
+    "message": "Redondas"
+  },
+  "shape_rounded": {
+    "message": "Algo redondeadas"
+  },
+  "shape_square": {
+    "message": "Rectas"
+  },
+  "size": {
+    "message": "Tamaño"
+  },
+  "sizeSub": {
+    "message": "Respecto al texto del chat"
+  },
+  "bold": {
+    "message": "Negrita"
+  },
+  "italic": {
+    "message": "Cursiva"
+  },
+  "sectionWhere": {
+    "message": "Dónde"
+  },
+  "chat": {
+    "message": "En el chat"
+  },
+  "about": {
+    "message": "En el panel «Acerca de» del canal"
+  },
+  "own": {
+    "message": "En tus propios mensajes"
+  },
+  "place": {
+    "message": "Posición en el chat"
+  },
+  "place_after": {
+    "message": "Después del nombre"
+  },
+  "place_before": {
+    "message": "Antes del nombre"
+  },
+  "link": {
+    "message": "Al hacer clic en una etiqueta se abre pr.alejo.io"
+  },
+  "linkSub": {
+    "message": "Donde cualquiera puede poner sus pronombres"
+  },
+  "reset": {
+    "message": "Restablecer"
+  },
+  "resetConfirm": {
+    "message": "Haz clic otra vez para restablecer"
+  },
+  "openTab": {
+    "message": "Abrir en una pestaña"
+  },
+  "setOwn": {
+    "message": "Poner tus pronombres"
+  },
+  "note": {
+    "message": "Los pronombres se consultan cuando alguien escribe en el chat y nunca tienen más de una hora de antigüedad. Quien no haya puesto ninguno no lleva etiqueta. Si usas el complemento Pronouns del propio FrankerFaceZ, desactiva uno de los dos."
+  },
+  "tagTitle": {
+    "message": "Pronombres de pr.alejo.io. Haz clic para poner los tuyos."
+  },
+  "tagTitlePlain": {
+    "message": "Pronombres de pr.alejo.io"
+  },
+  "tagLabel": {
+    "message": "Pronombres: {pronouns}. Abre pr.alejo.io para poner los tuyos."
+  },
+  "tagLabelPlain": {
+    "message": "Pronombres: {pronouns}"
+  }
+}

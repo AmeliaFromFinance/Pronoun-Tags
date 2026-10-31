@@ -2,14 +2,15 @@
 
 Shows each chatter's pronouns from [pr.alejo.io](https://pr.alejo.io) next to their name in Twitch chat, and next to the streamer's name on the channel's About panel, in a style you choose.
 
-![Pronoun Tags' settings beside Twitch chat](screenshot-1.png)
+![Pronoun Tags' settings beside Twitch chat](store/screenshot-1.png)
 
 ## Install
 
 | Browser | Get it from |
 |---|---|
-| Firefox | [Firefox Add-ons](https://addons.mozilla.org/en-GB/firefox/addon/pronoun-tags-for-twitch/) |
-| Chrome, Brave, Opera, Vivaldi, Arc | [Chrome Web Store](https://chromewebstore.google.com/detail/jmfdbkcneimobndcodfjilfdlnclclag) |
+| Firefox | [Firefox Add-ons](FIREFOX_ADDONS_LINK) |
+| Chrome, Brave, Opera, Vivaldi, Arc | [Chrome Web Store](CHROME_WEB_STORE_LINK) |
+| Microsoft Edge | [Edge Add-ons](EDGE_ADDONS_LINK) |
 
 Needs Firefox 140+ or a Chromium browser 121+. Works with Twitch's own chat and with FrankerFaceZ; 7TV's own chat is supported on a best-effort basis. Popout chat, mod view, the creator dashboard and VOD replays get tags too.
 
@@ -48,6 +49,31 @@ Pronoun Tags has no servers, no analytics and no ads. To look up pronouns, it se
 
 Pronoun Tags isn't made by or affiliated with Twitch or pr.alejo.io.
 
+## Install from source
+
+### Firefox
+
+1. Go to `about:debugging#/runtime/this-firefox`.
+2. Click **Load Temporary Add-on…** and pick `manifest.json`.
+
+Firefox removes temporary add-ons when it restarts.
+
+### Chrome, Edge and other Chromium browsers
+
+1. Go to `chrome://extensions` (`edge://extensions` in Edge).
+2. Turn on **Developer mode**.
+3. Click **Load unpacked** and pick this folder.
+
+The settings open in a tab once, right after installing.
+
+### Making the zip for the stores
+
+```sh
+./package.sh
+```
+
+This writes `dist/pronoun-tags-<version>.zip` with only the files the extension needs (no `store/` images or Markdown). The same zip goes to all three stores.
+
 ## How it works
 
 | File | Job |
@@ -85,3 +111,5 @@ Pronoun Tags isn't made by or affiliated with Twitch or pr.alejo.io.
 - **Text and languages:** `_locales/<language>/messages.json`.
 - **Where tags link:** `SETTINGS_URL` in `content.js` and `settings.js`.
 - **Cache length:** `MAX_AGE_MS` in `background.js`.
+
+Keep the Firefox add-on ID (`pronoun-tags@ame.owo` in `manifest.json`) the same forever: Firefox treats a new ID as a different add-on, so existing installs wouldn't update. Raise `version` in `manifest.json` for every store upload.

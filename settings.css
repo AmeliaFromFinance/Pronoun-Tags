@@ -1,0 +1,209 @@
+/*
+ * Pronoun Tags for Twitch: settings (the toolbar popup and the options tab).
+ *
+ * Laid out like a phone's settings app: a header with the main switch, the preview, tabs, then grouped cards of rows.
+ * Follows the system's dark or light mode, with Twitch's purple as the one accent. Everything is in rem, so the
+ * options tab can grow on big screens by changing one font size; there it splits into two columns.
+ */
+:root {
+  color-scheme: dark;
+  --win: #0e0e10;
+  --card: #1c1c21;
+  --card-hi: #29292f;
+  --hair: rgba(255, 255, 255, .075);
+  --text: #efeff1;
+  --muted: #9b9ba6;
+  --accent: #9147ff;
+  --accent-text: #bf94ff;
+  --danger: #ff6b6b;
+  --bar: rgba(14, 14, 16, .8);
+  --chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='m3 4.5 3 3 3-3' fill='none' stroke='%239b9ba6' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif;
+  font-size: 14px;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --win: #f2f2f6;
+    --card: #ffffff;
+    --card-hi: #ebebf0;
+    --hair: rgba(0, 0, 0, .08);
+    --text: #111114;
+    --muted: #6b6b76;
+    --accent-text: #772ce8;
+    --danger: #d92d20;
+    --bar: rgba(242, 242, 246, .82);
+    --chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='m3 4.5 3 3 3-3' fill='none' stroke='%236b6b76' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+}
+/* The options tab grows with the window: 16px on small screens, about 19px at 1080p and 24px at 1440p. */
+:root.page { font-size: clamp(1rem, .5vw + .5vh + .3rem, 1.5rem); }
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--win); color: var(--text); font: 400 1rem/1.4 var(--font); accent-color: var(--accent); }
+.popup body { width: 27rem; }
+button, input, select { font: inherit; color: inherit; }
+a { color: inherit; text-decoration: none; }
+:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 2px; }
+.icon { width: 1.15rem; height: 1.15rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---- Top: header, preview and tabs, kept in view while the settings scroll under them ---- */
+.side {
+  position: sticky; top: 0; z-index: 2; padding: 0 .85rem .7rem;
+  background: var(--bar); -webkit-backdrop-filter: saturate(1.6) blur(16px); backdrop-filter: saturate(1.6) blur(16px);
+  border-bottom: 1px solid var(--hair);
+}
+.bar { display: flex; align-items: center; gap: .6rem; padding: .75rem 0 .65rem; }
+.logo { width: 2rem; height: 2rem; flex: none; }
+.bar h1 { flex: 1; margin: 0; font-size: 1.12rem; font-weight: 650; letter-spacing: -.01em; }
+.master { display: inline-flex; cursor: pointer; }
+.installed { margin: -.15rem 0 .7rem; color: var(--muted); font-size: .92rem; text-wrap: pretty; }
+
+.preview-card { position: relative; }
+.pv {
+  padding: .55rem 0 .6rem; border-radius: .9rem;
+  background: #18181b; color: #efeff1; font: 400 13px/20px Inter, Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .06);
+}
+.pv.tw-root--theme-light { background: #ffffff; color: #0e0e10; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1); }
+.pv-line { padding: .05rem 2.6rem .05rem .85rem; overflow-wrap: anywhere; }
+.pv-badge { display: inline-block; width: 1.1em; height: 1.1em; margin-inline-end: .25em; border-radius: .2em; vertical-align: -.2em; }
+.pv-name { font-weight: 700; }
+.pv-about { margin: .35rem .85rem 0; padding-top: .45rem; border-top: 1px solid #35353c; font-size: 1.25em; font-weight: 700; line-height: 1.3; }
+.pv.tw-root--theme-light .pv-about { border-color: #e5e5ea; }
+.pv-theme {
+  position: absolute; top: .45rem; inset-inline-end: .45rem; display: grid; place-items: center;
+  width: 1.9rem; height: 1.9rem; padding: 0; border: 0; border-radius: 50%;
+  background: rgba(255, 255, 255, .1); color: #efeff1; cursor: pointer;
+}
+.pv-theme:hover { background: rgba(255, 255, 255, .18); }
+.pv-theme[aria-pressed="true"] { background: rgba(0, 0, 0, .06); color: #53535f; }
+.pv-theme[aria-pressed="true"]:hover { background: rgba(0, 0, 0, .12); }
+.pv-theme .icon { width: 1rem; height: 1rem; }
+
+/* Segmented tabs */
+.tabs { display: flex; gap: 2px; margin-top: .7rem; padding: 3px; border-radius: .7rem; background: var(--card-hi); }
+.tabs button {
+  flex: 1; height: 2rem; border: 0; border-radius: .55rem; background: none; color: var(--muted);
+  font-size: .93rem; font-weight: 600; cursor: pointer;
+}
+.tabs button:hover { color: var(--text); }
+.tabs button[aria-selected="true"] { background: var(--card); color: var(--text); box-shadow: 0 1px 3px rgba(0, 0, 0, .18); }
+
+/* ---- Settings ---- */
+.main { padding: .3rem .85rem 1rem; }
+.panels { transition: opacity .15s ease; }
+.panels.is-off { opacity: .45; }
+.panel[hidden] { display: none; }
+.group-label { margin: 1rem .2rem .4rem; color: var(--muted); font-size: .85rem; font-weight: 600; }
+.group { margin-top: .8rem; border-radius: .9rem; background: var(--card); overflow: hidden; }
+.group-label + .group { margin-top: 0; }
+
+.row { position: relative; display: flex; align-items: center; gap: .75rem; min-height: 2.9rem; padding: .45rem .9rem; }
+.group > .row + .row::before {
+  content: ''; position: absolute; top: 0; inset-inline: .9rem 0; height: 1px; background: var(--hair);
+}
+.group > .row[hidden] + .row::before { display: none; }
+.row-text { flex: 1; min-width: 0; }
+.row-label { display: block; }
+.row-sub { display: block; color: var(--muted); font-size: .86rem; }
+label.row { cursor: pointer; }
+.controls { display: flex; flex: none; align-items: center; gap: .45rem; }
+
+/* Drop-downs as quiet pills */
+select {
+  width: 10.5rem; height: 2rem; padding: 0 1.8rem 0 .7rem; border: 0; border-radius: .55rem;
+  background: var(--card-hi) var(--chevron) no-repeat right .55rem center / .8rem; appearance: none; cursor: pointer;
+  font-size: .95rem; text-overflow: ellipsis;
+}
+[dir="rtl"] select { padding: 0 .7rem 0 1.8rem; background-position: left .55rem center; }
+select:hover { filter: brightness(1.08); }
+
+/* Your own color: a round swatch and the hex code */
+.color-row[hidden] { display: none; }
+.color-row { min-height: 0; padding-top: .1rem; justify-content: flex-end; }
+.swatch {
+  width: 2rem; height: 2rem; padding: 0; border: 0; border-radius: 50%; background: none; cursor: pointer;
+}
+.swatch::-webkit-color-swatch-wrapper { padding: 0; }
+.swatch::-webkit-color-swatch { border: 0; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--hair); }
+.swatch::-moz-color-swatch { border: 0; border-radius: 50%; }
+.hex {
+  width: 6.6rem; height: 2rem; padding: 0 .7rem; border: 0; border-radius: .55rem; background: var(--card-hi);
+  font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92rem; text-transform: uppercase;
+}
+.hex[aria-invalid="true"] { box-shadow: inset 0 0 0 1.5px var(--danger); }
+
+/* Switches */
+.switch-input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.switch {
+  position: relative; flex: none; width: 2.75rem; height: 1.65rem; border-radius: 1rem;
+  background: var(--card-hi); transition: background-color .15s ease;
+}
+.switch::after {
+  content: ''; position: absolute; top: .15rem; inset-inline-start: .15rem; width: 1.35rem; height: 1.35rem; border-radius: 50%;
+  background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .3); transition: transform .15s ease;
+}
+.bar .switch, .group .switch { box-shadow: inset 0 0 0 1px var(--hair); }
+.switch-input:checked + .switch { background: var(--accent); box-shadow: none; }
+.switch-input:checked + .switch::after { transform: translateX(1.1rem); }
+[dir="rtl"] .switch-input:checked + .switch::after { transform: translateX(-1.1rem); }
+.switch-input:focus-visible + .switch { outline: 2px solid var(--accent-text); outline-offset: 2px; }
+
+/* Size */
+.slider { gap: .6rem; }
+.slider input { width: 6.6rem; cursor: pointer; }
+.slider output { min-width: 2.7rem; color: var(--muted); font-variant-numeric: tabular-nums; text-align: end; }
+
+/* ---- Ready-made styles ---- */
+.tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; }
+.tile {
+  position: relative; display: flex; flex-direction: column; align-items: stretch; gap: .4rem; padding: .4rem .4rem .5rem;
+  border: 0; border-radius: .9rem; background: var(--card); cursor: pointer; text-align: center;
+}
+.tile:hover { background: var(--card-hi); }
+.tile[aria-pressed="true"] { box-shadow: inset 0 0 0 2px var(--accent); }
+.tile-sample {
+  display: grid; place-items: center; height: 2.6rem; border-radius: .6rem;
+  background: #18181b; color: #efeff1; font: 400 13px/1 Inter, Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.page .tile-sample { font-size: .9rem; }
+.tile-sample.tw-root--theme-light { background: #f7f7f8; color: #0e0e10; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .06); }
+.tile-sample .pn-tag.pn-tag.pn-tag { margin: 0; }
+.tile-name { font-size: .88rem; font-weight: 600; color: var(--muted); }
+.tile[aria-pressed="true"] .tile-name { color: var(--text); }
+.tile-check {
+  position: absolute; top: -.35rem; inset-inline-end: -.35rem; display: none; place-items: center;
+  width: 1.3rem; height: 1.3rem; border-radius: 50%; background: var(--accent); color: #fff; box-shadow: 0 0 0 2px var(--win);
+}
+.tile-check .icon { width: .85rem; height: .85rem; stroke-width: 3; }
+.tile[aria-pressed="true"] .tile-check { display: grid; }
+
+/* ---- Actions and the note ---- */
+.actions { margin-top: 1.4rem; }
+.action { width: 100%; border: 0; background: none; text-align: start; cursor: pointer; }
+.action:hover { background: var(--card-hi); }
+.action .icon { color: var(--accent-text); }
+.action.danger, .action.danger .icon { color: var(--danger); }
+.note { margin: .6rem .2rem 0; color: var(--muted); font-size: .84rem; text-wrap: pretty; }
+
+/* ---- Options tab: a window-sized layout, two columns when there's room ---- */
+.page body { min-height: 100vh; }
+.page #app { max-width: 36rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+.page .side { margin: 0 -1rem; padding: 0 1rem .8rem; }
+.page .main { padding-inline: 0; }
+.page .pv { font-size: .93rem; line-height: 1.55; }
+@media (min-width: 60rem) {
+  .page #app {
+    display: grid; grid-template-columns: minmax(18rem, 25rem) minmax(22rem, 34rem); gap: 2.2rem;
+    max-width: none; justify-content: center; align-items: start; padding-top: 2.5rem;
+  }
+  .page .side { top: 2.5rem; margin: 0; padding: 0; background: none; border: 0; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .page .main { padding: 0; }
+  .page .main > .panels > .panel > :first-child { margin-top: 0; }
+  .page .tiles { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::after { transition: none !important; }
+}

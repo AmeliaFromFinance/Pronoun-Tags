@@ -1,0 +1,188 @@
+{
+  "extDescription": {
+    "message": "Mostra os pronomes do pr.alejo.io ao lado dos nomes no chat da Twitch, no estilo que você escolher."
+  },
+  "actionTitle": {
+    "message": "Configurações do Pronoun Tags"
+  },
+  "appTitle": {
+    "message": "Pronoun Tags"
+  },
+  "show": {
+    "message": "Mostrar pronomes"
+  },
+  "showSub": {
+    "message": "Do pr.alejo.io, ao lado dos nomes na Twitch"
+  },
+  "installed": {
+    "message": "O Pronoun Tags está instalado. Abra qualquer chat da Twitch para ver os pronomes das pessoas. Para mudar a aparência, clique no botão do Pronoun Tags na barra de ferramentas do navegador."
+  },
+  "preview": {
+    "message": "Pré-visualização"
+  },
+  "previewLightTheme": {
+    "message": "Tema claro"
+  },
+  "previewYou": {
+    "message": "Você"
+  },
+  "previewAbout": {
+    "message": "Sobre {channel}"
+  },
+  "tabStyle": {
+    "message": "Estilo"
+  },
+  "styles": {
+    "message": "Comece com um estilo"
+  },
+  "preset_classic": {
+    "message": "Clássico"
+  },
+  "preset_name": {
+    "message": "Cor do nome"
+  },
+  "preset_outline": {
+    "message": "Contorno"
+  },
+  "preset_subtle": {
+    "message": "Discreto"
+  },
+  "preset_solid": {
+    "message": "Sólido"
+  },
+  "sectionText": {
+    "message": "Texto"
+  },
+  "case": {
+    "message": "Maiúsculas"
+  },
+  "brackets": {
+    "message": "Parênteses"
+  },
+  "separator": {
+    "message": "Entre as palavras"
+  },
+  "words": {
+    "message": "Palavras"
+  },
+  "sectionColors": {
+    "message": "Cores"
+  },
+  "color": {
+    "message": "Cor do texto"
+  },
+  "color_purple": {
+    "message": "Roxo da Twitch"
+  },
+  "color_name": {
+    "message": "Cor do nome"
+  },
+  "color_gray": {
+    "message": "Cinza"
+  },
+  "color_custom": {
+    "message": "Sua cor"
+  },
+  "background": {
+    "message": "Fundo"
+  },
+  "bg_tint": {
+    "message": "Tom suave"
+  },
+  "bg_none": {
+    "message": "Nenhum"
+  },
+  "bg_custom": {
+    "message": "Sua cor"
+  },
+  "outline": {
+    "message": "Contorno"
+  },
+  "pickColor": {
+    "message": "Escolher uma cor: {setting}"
+  },
+  "hexLabel": {
+    "message": "Código hexadecimal: {setting}"
+  },
+  "sectionShape": {
+    "message": "Forma e tamanho"
+  },
+  "corners": {
+    "message": "Cantos"
+  },
+  "shape_pill": {
+    "message": "Redondos"
+  },
+  "shape_rounded": {
+    "message": "Arredondados"
+  },
+  "shape_square": {
+    "message": "Retos"
+  },
+  "size": {
+    "message": "Tamanho"
+  },
+  "sizeSub": {
+    "message": "Em relação ao texto do chat"
+  },
+  "bold": {
+    "message": "Negrito"
+  },
+  "italic": {
+    "message": "Itálico"
+  },
+  "sectionWhere": {
+    "message": "Onde"
+  },
+  "chat": {
+    "message": "No chat"
+  },
+  "about": {
+    "message": "No painel “Sobre” de um canal"
+  },
+  "own": {
+    "message": "Nas suas próprias mensagens"
+  },
+  "place": {
+    "message": "Posição no chat"
+  },
+  "place_after": {
+    "message": "Depois do nome"
+  },
+  "place_before": {
+    "message": "Antes do nome"
+  },
+  "link": {
+    "message": "Clicar numa tag abre o pr.alejo.io"
+  },
+  "linkSub": {
+    "message": "Onde qualquer pessoa pode definir seus pronomes"
+  },
+  "reset": {
+    "message": "Restaurar padrão"
+  },
+  "resetConfirm": {
+    "message": "Clique de novo para restaurar"
+  },
+  "openTab": {
+    "message": "Abrir numa aba"
+  },
+  "setOwn": {
+    "message": "Definir seus pronomes"
+  },
+  "note": {
+    "message": "Os pronomes são buscados quando alguém fala no chat e nunca ficam mais de uma hora desatualizados. Quem não definiu nenhum fica sem tag. Se você usa o add-on Pronouns do próprio FrankerFaceZ, desative um dos dois."
+  },
+  "tagTitle": {
+    "message": "Pronomes do pr.alejo.io. Clique para definir os seus."
+  },
+  "tagTitlePlain": {
+    "message": "Pronomes do pr.alejo.io"
+  },
+  "tagLabel": {
+    "message": "Pronomes: {pronouns}. Abre o pr.alejo.io para definir os seus."
+  },
+  "tagLabelPlain": {
+    "message": "Pronomes: {pronouns}"
+  }
+}

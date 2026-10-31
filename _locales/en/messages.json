@@ -1,0 +1,188 @@
+{
+  "extDescription": {
+    "message": "Shows Twitch chatters' pronouns from pr.alejo.io next to their names, in a style you choose."
+  },
+  "actionTitle": {
+    "message": "Pronoun Tags settings"
+  },
+  "appTitle": {
+    "message": "Pronoun Tags"
+  },
+  "show": {
+    "message": "Show pronouns"
+  },
+  "showSub": {
+    "message": "From pr.alejo.io, next to names on Twitch"
+  },
+  "installed": {
+    "message": "Pronoun Tags is installed. Open any Twitch chat to see people's pronouns. To change how they look, click the Pronoun Tags button in your browser's toolbar."
+  },
+  "preview": {
+    "message": "Preview"
+  },
+  "previewLightTheme": {
+    "message": "Light theme"
+  },
+  "previewYou": {
+    "message": "You"
+  },
+  "previewAbout": {
+    "message": "About {channel}"
+  },
+  "tabStyle": {
+    "message": "Style"
+  },
+  "styles": {
+    "message": "Start from a style"
+  },
+  "preset_classic": {
+    "message": "Classic"
+  },
+  "preset_name": {
+    "message": "Name color"
+  },
+  "preset_outline": {
+    "message": "Outline"
+  },
+  "preset_subtle": {
+    "message": "Subtle"
+  },
+  "preset_solid": {
+    "message": "Solid"
+  },
+  "sectionText": {
+    "message": "Text"
+  },
+  "case": {
+    "message": "Capitals"
+  },
+  "brackets": {
+    "message": "Brackets"
+  },
+  "separator": {
+    "message": "Between words"
+  },
+  "words": {
+    "message": "Words"
+  },
+  "sectionColors": {
+    "message": "Colors"
+  },
+  "color": {
+    "message": "Text color"
+  },
+  "color_purple": {
+    "message": "Twitch purple"
+  },
+  "color_name": {
+    "message": "Their name color"
+  },
+  "color_gray": {
+    "message": "Gray"
+  },
+  "color_custom": {
+    "message": "Your own color"
+  },
+  "background": {
+    "message": "Background"
+  },
+  "bg_tint": {
+    "message": "Soft tint"
+  },
+  "bg_none": {
+    "message": "None"
+  },
+  "bg_custom": {
+    "message": "Your own color"
+  },
+  "outline": {
+    "message": "Outline"
+  },
+  "pickColor": {
+    "message": "Pick a color: {setting}"
+  },
+  "hexLabel": {
+    "message": "Hex code: {setting}"
+  },
+  "sectionShape": {
+    "message": "Shape and size"
+  },
+  "corners": {
+    "message": "Corners"
+  },
+  "shape_pill": {
+    "message": "Round"
+  },
+  "shape_rounded": {
+    "message": "Slightly rounded"
+  },
+  "shape_square": {
+    "message": "Square"
+  },
+  "size": {
+    "message": "Size"
+  },
+  "sizeSub": {
+    "message": "Compared with the chat text"
+  },
+  "bold": {
+    "message": "Bold"
+  },
+  "italic": {
+    "message": "Italic"
+  },
+  "sectionWhere": {
+    "message": "Where"
+  },
+  "chat": {
+    "message": "In chat"
+  },
+  "about": {
+    "message": "On a channel's About panel"
+  },
+  "own": {
+    "message": "On your own messages"
+  },
+  "place": {
+    "message": "Position in chat"
+  },
+  "place_after": {
+    "message": "After the name"
+  },
+  "place_before": {
+    "message": "Before the name"
+  },
+  "link": {
+    "message": "Clicking a tag opens pr.alejo.io"
+  },
+  "linkSub": {
+    "message": "Where anyone can set their own pronouns"
+  },
+  "reset": {
+    "message": "Reset to defaults"
+  },
+  "resetConfirm": {
+    "message": "Click again to reset"
+  },
+  "openTab": {
+    "message": "Open in a tab"
+  },
+  "setOwn": {
+    "message": "Set your pronouns"
+  },
+  "note": {
+    "message": "Pronouns are looked up when someone chats and are never more than an hour old. People who haven't set any get no tag. If you use FrankerFaceZ's own Pronouns add-on, turn one of them off."
+  },
+  "tagTitle": {
+    "message": "Pronouns from pr.alejo.io. Click to set your own."
+  },
+  "tagTitlePlain": {
+    "message": "Pronouns from pr.alejo.io"
+  },
+  "tagLabel": {
+    "message": "Pronouns: {pronouns}. Opens pr.alejo.io to set your own."
+  },
+  "tagLabelPlain": {
+    "message": "Pronouns: {pronouns}"
+  }
+}

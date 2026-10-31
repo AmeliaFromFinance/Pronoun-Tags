@@ -1,0 +1,76 @@
+/*
+ * Pronoun Tags for Twitch: tag styles.
+ *
+ * The settings arrive as data-pn-* attributes and --pn-* variables on a container (look.js puts them on <html> on
+ * Twitch, and on the preview in the settings page), so one stylesheet covers every combination. Sizes are in em so
+ * tags follow Twitch's and FrankerFaceZ's chat font size. The doubled class wins over chat link styles.
+ */
+
+.pn-tag.pn-tag {
+  --pn-purple: #bf94ff;
+  --pn-gray: #adadb8;
+  --pn-fg: var(--pn-purple);
+  --pn-fill: color-mix(in srgb, var(--pn-fg) 16%, transparent);
+  --pn-edge: color-mix(in srgb, var(--pn-fg) 38%, transparent);
+
+  display: inline-block;
+  margin: 0;
+  margin-inline: .4em .1em;
+  padding: 0 .5em;
+  border-radius: .9em;
+  background: var(--pn-fill);
+  box-shadow: inset 0 0 0 1px var(--pn-edge);
+  color: var(--pn-fg);
+  font-family: inherit;
+  font-size: calc(var(--pn-scale, .85) * 1em);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.55;
+  letter-spacing: normal;
+  text-transform: none;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: baseline;
+  unicode-bidi: isolate;
+  cursor: default;
+  transition: filter .1s ease;
+}
+.tw-root--theme-light .pn-tag.pn-tag { --pn-purple: #772ce8; --pn-gray: #53535f; }
+
+a.pn-tag.pn-tag { cursor: pointer; }
+a.pn-tag.pn-tag:hover { color: var(--pn-fg); text-decoration: none; filter: brightness(1.18); }
+.tw-root--theme-light a.pn-tag.pn-tag:hover { filter: brightness(.85); }
+a.pn-tag.pn-tag:focus { outline: none; }
+a.pn-tag.pn-tag:focus-visible { outline: 2px solid #a970ff; outline-offset: 1px; }
+
+/* Text color */
+[data-pn-color="name"]   .pn-tag.pn-tag { --pn-fg: var(--pn-name, var(--pn-purple)); }
+[data-pn-color="gray"]   .pn-tag.pn-tag { --pn-fg: var(--pn-gray); }
+[data-pn-color="custom"] .pn-tag.pn-tag { --pn-fg: var(--pn-custom-fg, var(--pn-purple)); }
+
+/* Background and outline */
+[data-pn-bg="none"]   .pn-tag.pn-tag { --pn-fill: transparent; }
+[data-pn-bg="custom"] .pn-tag.pn-tag { --pn-fill: var(--pn-custom-bg, transparent); }
+[data-pn-outline="off"] .pn-tag.pn-tag { box-shadow: none; }
+[data-pn-bg="none"][data-pn-outline="off"] .pn-tag.pn-tag { padding: 0 .1em; }
+
+/* Corners and text style */
+[data-pn-shape="rounded"] .pn-tag.pn-tag { border-radius: .3em; }
+[data-pn-shape="square"]  .pn-tag.pn-tag { border-radius: 0; }
+[data-pn-bold="off"]  .pn-tag.pn-tag { font-weight: 400; }
+[data-pn-italic="on"] .pn-tag.pn-tag { font-style: italic; }
+
+/* Before the name in chat: the gap goes on the other side */
+[data-pn-place="before"] .pn-tag.pn-tag:not(.pn-tag--heading) { margin-inline: .1em .35em; }
+
+/* On the channel About panel heading ("About SleepySprout  She/Her") */
+.pn-tag.pn-tag.pn-tag--heading {
+  margin-inline: .5em 0;
+  font-size: calc(var(--pn-scale, .85) * .73em);
+  line-height: 1.7;
+  vertical-align: .18em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pn-tag.pn-tag { transition: none; }
+}

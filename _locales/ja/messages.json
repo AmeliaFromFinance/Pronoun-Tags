@@ -1,0 +1,188 @@
+{
+  "extDescription": {
+    "message": "Twitchチャットで、pr.alejo.ioに登録された代名詞を名前の横に表示します。見た目は自由にカスタマイズできます。"
+  },
+  "actionTitle": {
+    "message": "Pronoun Tagsの設定"
+  },
+  "appTitle": {
+    "message": "Pronoun Tags"
+  },
+  "show": {
+    "message": "代名詞を表示"
+  },
+  "showSub": {
+    "message": "pr.alejo.ioから取得し、Twitchの名前の横に表示"
+  },
+  "installed": {
+    "message": "Pronoun Tagsをインストールしました。Twitchのチャットを開くと、みんなの代名詞が表示されます。見た目を変えるには、ブラウザのツールバーにあるPronoun Tagsのボタンをクリックしてください。"
+  },
+  "preview": {
+    "message": "プレビュー"
+  },
+  "previewLightTheme": {
+    "message": "ライトテーマ"
+  },
+  "previewYou": {
+    "message": "あなた"
+  },
+  "previewAbout": {
+    "message": "{channel}について"
+  },
+  "tabStyle": {
+    "message": "スタイル"
+  },
+  "styles": {
+    "message": "スタイルから選ぶ"
+  },
+  "preset_classic": {
+    "message": "クラシック"
+  },
+  "preset_name": {
+    "message": "名前の色"
+  },
+  "preset_outline": {
+    "message": "枠線"
+  },
+  "preset_subtle": {
+    "message": "控えめ"
+  },
+  "preset_solid": {
+    "message": "塗りつぶし"
+  },
+  "sectionText": {
+    "message": "テキスト"
+  },
+  "case": {
+    "message": "大文字・小文字"
+  },
+  "brackets": {
+    "message": "かっこ"
+  },
+  "separator": {
+    "message": "区切り文字"
+  },
+  "words": {
+    "message": "単語"
+  },
+  "sectionColors": {
+    "message": "色"
+  },
+  "color": {
+    "message": "文字色"
+  },
+  "color_purple": {
+    "message": "Twitchパープル"
+  },
+  "color_name": {
+    "message": "その人の名前の色"
+  },
+  "color_gray": {
+    "message": "グレー"
+  },
+  "color_custom": {
+    "message": "好きな色"
+  },
+  "background": {
+    "message": "背景"
+  },
+  "bg_tint": {
+    "message": "淡い色"
+  },
+  "bg_none": {
+    "message": "なし"
+  },
+  "bg_custom": {
+    "message": "好きな色"
+  },
+  "outline": {
+    "message": "枠線"
+  },
+  "pickColor": {
+    "message": "色を選ぶ：{setting}"
+  },
+  "hexLabel": {
+    "message": "カラーコード：{setting}"
+  },
+  "sectionShape": {
+    "message": "形とサイズ"
+  },
+  "corners": {
+    "message": "角の形"
+  },
+  "shape_pill": {
+    "message": "丸"
+  },
+  "shape_rounded": {
+    "message": "少し丸め"
+  },
+  "shape_square": {
+    "message": "四角"
+  },
+  "size": {
+    "message": "サイズ"
+  },
+  "sizeSub": {
+    "message": "チャットの文字に対する大きさ"
+  },
+  "bold": {
+    "message": "太字"
+  },
+  "italic": {
+    "message": "斜体"
+  },
+  "sectionWhere": {
+    "message": "表示場所"
+  },
+  "chat": {
+    "message": "チャット内"
+  },
+  "about": {
+    "message": "チャンネルの「概要」パネル"
+  },
+  "own": {
+    "message": "自分のメッセージ"
+  },
+  "place": {
+    "message": "チャットでの位置"
+  },
+  "place_after": {
+    "message": "名前の後"
+  },
+  "place_before": {
+    "message": "名前の前"
+  },
+  "link": {
+    "message": "タグをクリックするとpr.alejo.ioを開く"
+  },
+  "linkSub": {
+    "message": "誰でも自分の代名詞を設定できるサイトです"
+  },
+  "reset": {
+    "message": "初期設定に戻す"
+  },
+  "resetConfirm": {
+    "message": "もう一度クリックすると戻します"
+  },
+  "openTab": {
+    "message": "タブで開く"
+  },
+  "setOwn": {
+    "message": "自分の代名詞を設定"
+  },
+  "note": {
+    "message": "代名詞は誰かがチャットしたときに取得され、1時間より古い情報は表示されません。設定していない人にはタグが付きません。FrankerFaceZのPronounsアドオンを使っている場合は、どちらか一方をオフにしてください。"
+  },
+  "tagTitle": {
+    "message": "pr.alejo.ioの代名詞。クリックして自分の代名詞を設定できます。"
+  },
+  "tagTitlePlain": {
+    "message": "pr.alejo.ioの代名詞"
+  },
+  "tagLabel": {
+    "message": "代名詞：{pronouns}。pr.alejo.ioを開いて自分の代名詞を設定できます。"
+  },
+  "tagLabelPlain": {
+    "message": "代名詞：{pronouns}"
+  }
+}
