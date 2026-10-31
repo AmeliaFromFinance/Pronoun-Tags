@@ -103,4 +103,4 @@ No remote code, no analytics, no other servers. The source is not minified.
 | `promo-small.png` | 440×280 | Chrome (required), Edge (optional) |
 | `logo-300.png` | 300×300 | Edge store logo |
 
-Chrome's store icon is the 128×128 icon already in the zip.
+| `icon-128.png` | 128×128 (96×96 artwork, 16px clear border) | Chrome store icon |
