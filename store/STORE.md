@@ -102,5 +102,4 @@ No remote code, no analytics, no other servers. The source is not minified.
 | `screenshot-1.png`, `screenshot-2.png`, `screenshot-3.png` | 1280×800 | Chrome (at least 1, up to 5), Edge (up to 6), Firefox |
 | `promo-small.png` | 440×280 | Chrome (required), Edge (optional) |
 | `logo-300.png` | 300×300 | Edge store logo |
-
 | `icon-128.png` | 128×128 (96×96 artwork, 16px clear border) | Chrome store icon |
