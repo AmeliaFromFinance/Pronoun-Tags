@@ -63,13 +63,30 @@ Pronoun Tags isn't made by or affiliated with Twitch or pr.alejo.io.
 
 **Chromium:** go to `chrome://extensions` → turn on **Developer mode** → **Load unpacked** → pick this folder.
 
-### Build the store zip
+### Scripts
+
+Run these from the project folder. On Windows, use Git Bash. You'll need Git 2.38+ and Node.js; releases also need the [GitHub CLI](https://cli.github.com).
+
+| Script | What it does |
+|---|---|
+| `scripts/test.sh` | Checks syntax, JSON, the manifest, text keys and versions. |
+| `scripts/package.sh` | Builds the store zip, `dist/pronoun-tags-<version>.zip`. The same zip works for every store. |
+| `scripts/bundle.sh` | Zips the project as it is on GitHub, without anything in `.gitignore`. |
+| `scripts/commit.sh "Message"` | Runs the checks, then commits every change. |
+| `scripts/push.sh` | Checks for merge conflicts, catches up with GitHub if needed, runs the checks and pushes to `main`. |
+| `scripts/bump.sh patch` | Raises the version: `patch`, `minor`, `major` or an exact `1.2.3`. |
+| `scripts/release.sh` | Tags the version and creates a draft GitHub release with both zips attached. |
+| `scripts/publish.sh` | Publishes the draft release. |
+
+A typical release:
 
 ```sh
-./package.sh
+scripts/bump.sh minor
+scripts/commit.sh "Version 1.3.0"
+scripts/push.sh
+scripts/release.sh
+scripts/publish.sh
 ```
-
-Writes `dist/pronoun-tags-<version>.zip` with only the files the extension needs. The same zip works for every store.
 
 ### Files
 
@@ -82,6 +99,7 @@ Writes `dist/pronoun-tags-<version>.zip` with only the files the extension needs
 | `content.css` | Tag styles. Settings arrive as `data-pn-*` attributes and `--pn-*` variables on `<html>`. |
 | `popup.html`, `options.html`, `settings.js`, `settings.css` | The settings, in the toolbar popup and in a tab. |
 | `_locales/` | All text, per language. |
+| `scripts/` | Test, package and release scripts. |
 
 The website lives on the [`gh-pages`](../../tree/gh-pages) branch.
 
@@ -97,6 +115,6 @@ The website lives on the [`gh-pages`](../../tree/gh-pages) branch.
 - **Defaults, choices and styles:** `DEFAULTS`, `CHOICES` and `PRESETS` in `look.js`. New ones also need a name in each `_locales/<language>/messages.json`.
 - **How a choice looks:** the matching `[data-pn-…]` rule in `content.css`.
 - **Cache length:** `MAX_AGE_MS` in `background.js`.
-- **Version:** raise `version` in `manifest.json` for each store upload.
+- **Version:** run `scripts/bump.sh` before each store upload.
 
 Never change the Firefox add-on ID (`pronoun-tags-for-twitch@ame.owo`). Firefox treats a new ID as a new add-on, so existing installs would stop updating.

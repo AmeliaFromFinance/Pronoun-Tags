@@ -2,7 +2,7 @@
 
 Everything the Chrome Web Store, Firefox Add-ons and Edge Add-ons forms ask for, ready to paste.
 
-- **Package:** `./package.sh` → `dist/pronoun-tags-<version>.zip` (the same zip for all three stores)
+- **Package:** `scripts/package.sh` → `dist/pronoun-tags-<version>.zip` (the same zip for all three stores)
 - **Privacy policy URL:** `https://github.com/AmeliaFromFinance/Pronoun-Tags/blob/main/PRIVACY.md`
 - **Website:** `https://pronouns.sinist3r.lol`
 - **Support:** `https://github.com/AmeliaFromFinance/Pronoun-Tags/issues`
