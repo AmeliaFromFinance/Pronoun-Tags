@@ -1,6 +1,6 @@
 {
   "extDescription": {
-    "message": "Shows Twitch chatters' pronouns from pr.alejo.io next to their names, in a style you choose."
+    "message": "Shows pronouns from pr.alejo.io next to names in Twitch chat, in a style you choose."
   },
   "actionTitle": {
     "message": "Pronoun Tags settings"

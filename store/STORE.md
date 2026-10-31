@@ -14,33 +14,33 @@ Everything the Chrome Web Store, Firefox Add-ons and Edge Add-ons forms ask for,
 
 **Summary** (from the manifest; Chrome allows 132 characters, Firefox 250):
 
-> Shows Twitch chatters' pronouns from pr.alejo.io next to their names, in a style you choose.
+> Shows pronouns from pr.alejo.io next to names in Twitch chat, in a style you choose.
 
 **Description** (plain text; Edge needs at least 250 characters):
 
 ```
-See people's pronouns right next to their names in Twitch chat, and next to the streamer's name on the channel's About panel.
+See people's pronouns next to their names in Twitch chat, and next to the streamer's name on About panels.
 
-Pronouns come from pr.alejo.io, where anyone can set their own for free. People who haven't set any get no tag, and clicking a tag takes you there.
+Pronouns come from pr.alejo.io, where anyone can set their own for free. People with none set get no tag. Click a tag to set yours.
 
 MAKE IT YOURS
-Click the toolbar button for a live preview and:
-- Six ready-made styles: Classic, Name color, Outline, Subtle, Solid and Blush.
+Click the toolbar button for a live preview, then:
+- Start from six styles: Classic, Name color, Outline, Subtle, Solid and Blush.
 - Capitals: She/Her, she/her, SHE/HER or She/her.
-- Brackets, what goes between the words, or just the first word.
-- Text in Twitch purple, the person's own name color, gray or any color. A soft tint, no background, or any color behind it.
+- Brackets, the separator, or just the first word.
+- Text in Twitch purple, their name color, gray or any color. A soft tint, no background or any color behind it.
 - Outline, corners, size, bold and italic.
-- Before or after the name, in chat and on About panels, on your own messages or not.
+- Before or after the name. In chat, on About panels and on your own messages, each on or off.
 
 WORKS WHERE YOU CHAT
-Twitch's own chat, FrankerFaceZ, popout chat, mod view, the creator dashboard and VOD replays. Changes show up instantly, with no reload.
+Twitch chat, FrankerFaceZ, popout chat, mod view, the creator dashboard and VOD replays. Changes show up instantly, with no reload.
 
 English, Español, Français, Deutsch, Português, Русский and 日本語.
 
 PRIVACY
-No servers, no analytics, no ads. To look up pronouns, usernames from chat (and the channel you're viewing) are sent to the pronouns API at api.pronouns.alejo.io. Your settings stay in your browser.
+No servers, no analytics, no ads. To look up pronouns, usernames from chat (and the channel you're viewing) are sent to api.pronouns.alejo.io. Settings stay in your browser.
 
-If you use FrankerFaceZ's own Pronouns add-on, turn one of them off so you don't see pronouns twice.
+Using FrankerFaceZ's own Pronouns add-on? Turn one of them off so you don't see pronouns twice.
 
 Not made by or affiliated with Twitch or pr.alejo.io.
 ```
